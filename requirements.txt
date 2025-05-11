@@ -1,2 +1,26 @@
 Flask
 flask-cors
+
+# Core dependencies
+numpy==1.26.4
+pandas==2.2.2
+
+# NLP and text preprocessing
+nltk==3.8.1
+scikit-learn==1.4.2
+
+# Levenshtein Distance
+python-Levenshtein==0.25.1
+
+# FastAPI for backend API
+fastapi==0.111.0
+uvicorn==0.29.0
+
+# For CORS handling (if needed)
+starlette==0.37.2
+
+# If you're logging or serving frontend
+requests==2.31.0
+
+# Pydantic for data validation
+pydantic==2.7.1
