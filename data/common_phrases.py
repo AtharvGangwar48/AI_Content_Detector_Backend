@@ -1,0 +1,18 @@
+common_phrases = [
+    "it is important to note",
+    "in conclusion",
+    "furthermore",
+    "as a result",
+    "therefore",
+    "moreover",
+    "in this essay",
+    "undoubtedly",
+    "in other words",
+    "to sum up",
+    "based on the evidence",
+    "from my perspective",
+    "clearly",
+    "in light of this",
+    "this demonstrates that",
+    "it can be seen that",
+]
