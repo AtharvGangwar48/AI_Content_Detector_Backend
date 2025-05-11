@@ -24,3 +24,6 @@ requests==2.31.0
 
 # Pydantic for data validation
 pydantic==2.7.1
+
+# For Render 
+gunicorn==22.0.0
