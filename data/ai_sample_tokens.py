@@ -14,5 +14,3 @@ ai_sample_tokens = []
 # Assuming the text is in a column named 'text'. Change as needed.
 for text in df.iloc[:, 0]:  # Or df['column_name'] if you know it
     ai_sample_tokens.extend(preprocess(str(text)))
-
-print(ai_sample_tokens)
