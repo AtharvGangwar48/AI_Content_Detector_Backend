@@ -1,3 +1,4 @@
+import pandas as pd
 import re
 
 def preprocess(text):
@@ -5,16 +6,13 @@ def preprocess(text):
     text = re.sub(r'[^a-z\s]', '', text)
     return text.split()
 
-# Add more examples to improve robustness
-ai_samples = [
-    "in conclusion it is important to note that artificial intelligence is revolutionizing the world",
-    "furthermore this technology enables greater automation and efficiency across industries",
-    "therefore we can expect continued innovation in machine learning and data analysis",
-    "moreover the impact of ai on society is growing rapidly with significant implications",
-    "as a result businesses are increasingly integrating ai tools into their workflows"
-]
+# Read CSV file
+df = pd.read_csv('data/Training_Essay_Data.csv')
 
-# Tokenize all phrases and flatten into a single list of tokens
 ai_sample_tokens = []
-for sentence in ai_samples:
-    ai_sample_tokens.extend(preprocess(sentence))
+
+# Assuming the text is in a column named 'text'. Change as needed.
+for text in df.iloc[:, 0]:  # Or df['column_name'] if you know it
+    ai_sample_tokens.extend(preprocess(str(text)))
+
+print(ai_sample_tokens)
